@@ -111,11 +111,13 @@ export class CuponClass extends MethodsClass {
   }
 
   private createCuponListFile(tipoCupon: string, cupon: string) {
+    if (!fs.existsSync(path.join(__dirname, `../listas`))) {
+      fs.mkdirSync(path.join(__dirname, `../listas`));
+    }
     const actualDate = Date.now();
     fs.writeFileSync(
       path.join(__dirname, `../listas/${tipoCupon}${actualDate}.txt`),
       cupon
     );
   }
-
 }
