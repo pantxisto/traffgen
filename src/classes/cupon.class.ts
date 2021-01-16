@@ -104,7 +104,7 @@ export class CuponClass extends MethodsClass {
       this.conf.numerosPorBoleto === 0 ||
       this.conf.cantidadBoletos === 0
     ) {
-      this.showCupones();
+      this.createCuponListFile("AlgoritmoParado", this.result);
       return true;
     }
     return false;
