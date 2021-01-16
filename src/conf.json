@@ -1,0 +1,10 @@
+{
+  "informacion": {
+    "sorteo": "El niño",
+    "fecha": "06/01/2021",
+    "premio": "10000000$"
+  },
+  "cantidadBoletos": 10,
+  "numerosPorBoleto": 15,
+  "bolasDisponibles": [0, 1, 2, 3, 4, 5]
+}

@@ -1,0 +1,5 @@
+node_modules
+.dockerfile
+nodemon.json
+package-lock.json
+readme.md
